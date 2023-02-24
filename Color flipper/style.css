@@ -1,0 +1,178 @@
+
+:root{
+	--default: hsl(123, 100%, 36%);
+	--dark-blue:hsl(217, 54%, 11%);
+	--medium-blue:hsl(216, 50%, 16%);
+	--white:hsl(0, 0%, 100%);
+	--cyan:hsl(178, 100%, 50%);
+	--soft-blue-bg:hsla(219, 100%, 42%, 0.74);
+	--soft-blue:hsl(215, 51%, 70%);
+	--fs-small: 1rem;
+	--fs-medium:2rem;
+	--fs-large:4rem;
+}
+
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	--outline: 2px solid rgba(255, 0, 0, 0.473);
+}
+body{
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color:var(--soft-blue-bg);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main{
+	padding:1rem;
+	display: grid;
+	gap: 2rem;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: auto;
+	place-items: center;
+	gap:1.75rem;
+	padding: 3rem;
+	background-color: var(--medium-blue);
+	border-radius: 8px;
+	box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.404);
+	
+}
+
+@media screen and (min-width:768px) {
+	.buttons {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+	.color-pallete{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
+
+.buttons{
+	display: grid;
+	gap:1rem;
+	padding: 0.75rem;
+	
+}
+
+.button-1, .button-2{
+	display: grid;
+	place-items: center;
+	gap:1rem;
+	max-width: 20rem;
+}
+
+h1{
+	color:var(--cyan);
+	letter-spacing: 4px;
+	text-align: center;
+	font-size:var(--fs-large);
+}
+
+hr{
+	width: 60%;
+	height: 1px;
+	border:0;
+	background-color: var(--soft-blue);
+}
+
+p{
+	text-align: center;
+	color: var(--soft-blue);
+	font-size: var(--fs-small);
+}
+
+#btn, #btn_hex{
+	padding:1rem 3rem;
+	background-color: var(--white);
+	border: 2px solid var(--white);
+	border-radius: 50px;
+	transition: all 300ms ease;
+	box-shadow: 0rem 10px 14px -6px rgba(0, 0, 0, 0.664);
+}
+
+#btn:hover, #btn_hex:hover{
+	background-color: transparent;
+	color: var(--white);
+	cursor:pointer;
+}
+
+button p{
+	color: var(--dark-blue);
+	transition: all 200ms ease;
+	font-weight: 700;
+}
+
+button:hover p{
+	color: var(--white);
+}
+
+.color-pallete{
+	display: grid;
+	place-items: center;
+	gap:1rem;
+	padding:1rem;
+	border-radius: 10px;
+}
+.color-pallete > button{
+	padding:3rem;
+	border-radius: 10px;
+	border: 0;
+}
+
+.color-pallete > button:hover{
+	cursor: pointer;
+}
+
+#color-1{
+	background-color:hsl(178, 100%, 50%);
+}
+#color-2{
+	background-color:hsl(215, 51%, 70%);
+}
+#color-3{
+	background-color:hsl(216, 50%, 16%);
+}
+#color-4{
+	background-color:hsl(0, 0%, 100%);
+}
+#color-5{
+	background-color:hsl(217, 54%, 11%);
+}
+
+.default{
+	display: grid;
+	place-items: center;
+}
+
+#default-bg{
+	font-size: var(--fs-small);
+	font-weight: 700;
+	padding:1rem 3rem;
+	background-color: var(--white);
+	border: 2px solid var(--white);
+	border-radius: 10px;
+	transition: all 300ms ease;
+	box-shadow: 0rem 10px 14px -6px rgba(0, 0, 0, 0.664);
+}
+
+#default-bg:hover{
+	cursor:pointer;
+	background-color: transparent;
+	color: var(--white);
+}
+
+.cursor{
+	cursor: pointer;
+}
+

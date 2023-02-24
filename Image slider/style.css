@@ -1,0 +1,65 @@
+:root{
+	--primary:hsl(233, 47%, 7%);
+	--secondary:hsl(244, 38%, 16%);
+	--tertiary:hsl(277, 64%, 61%);
+	--white:hsl(0, 0%, 100%);
+	--primary-accent:hsl(178, 100%, 50%);
+	--secondary-accent:hsla(0, 0%, 100%, 0.75);
+	--soft-edge:8px;
+	--rounded-edge:20px;
+	--circle-border:50%;
+	--fs-small: 1rem;
+	--fs-medium:2rem;
+	--fs-large:4rem;
+	--fw-light: 200;
+	--fw-medium: 400;
+	--fw-normal: 500;
+	--fw-bold: 700;
+	--fw-bolder: 900;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/*Style start*/
+
+body{
+	background-color: var(--white);
+	
+}
+
+.carousel-container{
+	position: relative;
+	max-height: 50rem;
+	max-width: 50rem;
+	margin: 0 auto;
+}
+
+.carousel__track-container{
+	position: relative;
+	height: 100%;
+}
+
+.carousel-track{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.carousel__slide{
+	
+	top: 0;
+	bottom: 0;
+}
+
+.carousel__image{
+	max-width: 40rem;
+}
+
+.carousel__button, .carousel__button img{
+	cursor: pointer;
+	width: 3rem;
+	height: 3rem;
+}

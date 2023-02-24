@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>Image carousel</title>
+</head>
+<body>
+	<main>
+		<div class="carousel-container">
+			<button class="carousel__button left">
+				<img src="./Images/left.png" alt="arrow pointing left" >
+			</button>
+			<div class="carousel__track-container">
+				<ul class="carousel-track">
+					<li class="carousel__slide">
+						<img class="carousel__image" src="./Images/Cover art/10.png" alt="" srcset="">
+					</li>
+					<li class="carousel__slide">
+						<img class="carousel__image" src="./Images/Cover art/11.jpg" alt="" srcset="">
+					</li>
+					<li class="carousel__slide">
+						<img class="carousel__image" src="./Images/Cover art/12.png" alt="" srcset="">
+					</li>
+					<li class="carousel__slide">
+						<img class="carousel__image" src="./Images/Cover art/13.png" alt="" srcset="">
+					</li>
+				</ul>
+			</div>
+			<button class="carousel__button right">
+				<img src="./Images/next.png" alt="arrow pointing right" >
+			</button>
+			<div class="carousel-nav">
+				<button class="carousel-indicator"></button><button class="carousel-indicator"></button><button class="carousel-indicator"></button>
+			</div>
+		</div>
+	</main>
+	<script src="./slider.js"></script>
+</body>
+</html>
