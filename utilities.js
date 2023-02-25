@@ -18,9 +18,18 @@
 start with0, -units, +units, repeat and finish with 0
 */
 
+//shake animation function
+
 function shake() {
     errorMessage.classList.add("shake");
     setTimeout(() => {errorMessage.classList.remove('shake');}, 300);
+}
+
+//push animation function
+
+function buttonPush(){
+	button.classList.add("push");
+	setTimeout(() => {button.classList.remove("push")}, 100)
 }
 
 //email regular expresion function
@@ -31,3 +40,38 @@ function isValidEmail(email){
 
 }
 
+//name regular expression function
+
+function isValidName(name){
+	const pattern = /^[a-zA-Z\s_]+$/;
+  	return pattern.test(name);
+}
+
+//password regular expression function
+
+function isValidPassword(password){
+	const lowercasePattern = /[a-z]/;
+	const uppercasePattern = /[A-Z]/;
+	const numberPattern = /[0-9]/;
+	const specialCharPattern = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+	return lowercasePattern.test(password) && uppercasePattern.test(password) && numberPattern.test(password) && specialCharPattern.test(password);
+}
+
+//error messsage functions
+
+function displayError(message, inputField){
+	errorMessage(message, inputField);
+	shake(message);
+}
+
+function errorMessage(message, inputField){
+	message.classList.add("display-error-message");
+	inputField.style.border = "2px solid red";
+}
+
+//success message functions
+
+function success( message, inputField,){
+	message.classList.remove("display-error-message");
+	inputField.style.border = "2px solid green";
+}
