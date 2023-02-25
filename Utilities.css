@@ -1,21 +1,24 @@
 :root{
-	--primary:hsl(217, 54%, 11%);
-	--secondary:hsl(216, 50%, 16%);
-	--tertiary:hsl(215, 51%, 70%);
+	--primary-background-color:hsl(217, 54%, 11%);
+	--secondary-color:hsl(216, 50%, 16%);
+	--tertiary-color:hsl(215, 51%, 70%);
+	--primary-font-color:hsl(215, 51%, 70%);
+	--secondary-font-color:hsl(215, 51%, 70%);
 	--white:hsl(0, 0%, 100%);
-	--primary-accent:hsl(178, 100%, 50%);
-	--secondary-accent:hsla(219, 100%, 42%, 0.74);
-	--soft-edge:8px;
-	--rounded-edge:20px;
-	--circle-border:50%;
+	--primary-accent-color:hsl(178, 100%, 50%);
+	--secondary-accent-color:hsla(219, 100%, 42%, 0.74);
+	--soft-edges:8px;
+	--rounded-edges:20px;
+	--full-circle-border:50%;
 	--fs-small: 1rem;
 	--fs-medium:2rem;
-	--fs-large:4rem;
+	--fs-large:3rem;
 	--fw-light: 200;
-	--fw-medium: 400;
-	--fw-normal: 500;
+	--fw-regular: 400;
+	--fw-medium: 500;
+	--fw-semi-bold: 600;
 	--fw-bold: 700;
-	--fw-bolder: 900;
+	--fw-extra-bold: 900;
 }
 
 /*___________________________________________Reset_____________________________________________*/
@@ -27,6 +30,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* Remove default margin */
@@ -88,7 +93,6 @@ select {
     transition-duration: 0.01ms !important;
   }
 }
-
 
 /*______________________________________________Utility Classes____________________________________________*/
 
