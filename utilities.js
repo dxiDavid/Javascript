@@ -75,3 +75,34 @@ function success( message, inputField,){
 	message.classList.remove("display-error-message");
 	inputField.style.border = "2px solid green";
 }
+
+
+//The Following functions go Together
+
+//node list function to make sure that only one item is active
+
+element.forEach((percentage) => {
+	percentage.addEventListener("click", (e) => {
+		selectedAttribute = e.target.getAttribute("attribute");
+		
+		if(!e.target.classList.contains("active")){
+			e.target.classList.toggle("active");
+		}
+
+		if (e.target.classList.contains("active")) {
+			percentages.forEach((e) => e.classList.remove("active"));
+			percentage.classList.add("active");
+		  }
+		  calculate(selectedPercentage);
+
+	})
+})
+
+//remove a class from an element when I click anywhere in the DOM
+
+document.addEventListener("click", function (e) {
+	if (!e.target.matches(".selected")) {
+	  buttons.forEach((e) => e.classList.remove("selected"));
+	  selectedNumber = undefined;
+	}
+});
