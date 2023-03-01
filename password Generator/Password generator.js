@@ -1,4 +1,4 @@
-function passwordGenerator(){
+
 	
 	let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	let numbers = "0123456789";
@@ -38,9 +38,14 @@ function passwordGenerator(){
 		return values
 	}
 
+	function generate(variable, typeOfCharacter, numberOfCharactersRequired){
+		variable = "";
+		for(var i = 0; i < numberOfCharactersRequired; i++){
+			variable += typeOfCharacter.charAt(Math.floor(Math.random() * typeOfCharacter.length));	
+		}
+		return variable;
+	}
+
 let output = generateLetters(7) + generateNumbers(6) + generateSpecialCharacters(6)
 output.split("")
 console.log(stringRandomizer(output.split("")).join(""))
-}
-
-passwordGenerator()
