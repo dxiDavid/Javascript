@@ -44,5 +44,17 @@ function generatePassword(passwordLength){
 		password += numbers.charAt(Math.floor(Math.random() * numbers.length)) 
 		password += symbols.charAt(Math.floor(Math.random() * symbols.length)) 
 	}
-
+	return stringRandomizer(password.split(""));
 }
+
+function stringRandomizer(values){
+	let index = values.length, randomIndex;
+	while(index != 0){
+		randomIndex = Math.floor(Math.random() *index)
+		index--
+		[values[index], values[randomIndex]] = [values[randomIndex], values[index]];
+	}
+	return values
+}
+
+//add some validation
