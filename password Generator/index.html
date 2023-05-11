@@ -9,7 +9,17 @@
 </head>
 <body>
 	<main>
-		generator
+		<div class="container">
+			<form action="submit" class="form shadow">
+				<label for="Enter Password Length"><h1>Enter Password Length</h1></label>
+				<input type="number" aria-label="Password length input" name="Password Length" id="input" placeholder="0">
+				<button class="" type="button" title="Generate Password" id="generate">Generate</button>
+			</form>
+
+			<div class="display shadow">
+				<p class="output"> Your password will appear here</p>
+			</div>
+		</div>
 	</main>
 <script src="./Password generator.js"></script>
 </body>
