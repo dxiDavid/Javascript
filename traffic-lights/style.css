@@ -1,0 +1,51 @@
+body{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+  color: white;
+}
+
+.lights{
+  background-color: #000000;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #3a3a3a;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.light-box{
+  padding: 0.25rem;
+  background-color: #1b1b1b;
+  border: 2px solid #505050;
+  border-radius: 0.5rem;
+}
+
+.light{
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.red{
+  background-color: red;
+  opacity: 0.5;
+}
+
+.amber{
+  background-color: orange;
+  opacity: 0.5;
+}
+
+.green{
+  background-color: rgb(0, 255, 0);
+  opacity: 0.5;
+}
+
+.active{
+  opacity: 1;
+}
