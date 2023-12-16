@@ -1,7 +1,7 @@
 const generateBtn = document.getElementById("generate")
 const outputBox = document.querySelector(".output")
 const inputBox = document.getElementById("input")
-const form = document.querySelector('form');
+const form = document.querySelector('form')
 
 form.addEventListener("keydown", (e) => {
 	if(e.key === "Enter"){
